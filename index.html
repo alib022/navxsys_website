@@ -3,20 +3,23 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>nav[x] systems</title>
-<meta name="description" content="nav[x] systems — in stealth." />
+<title>Navx Systems</title>
+<meta name="description" content="Navx Systems — in stealth." />
 
 <!-- Open Graph / social preview -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="nav[x] systems" />
+<meta property="og:title" content="Navx Systems" />
 <meta property="og:description" content="In stealth." />
 <meta property="og:url" content="https://navxsys.com/" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="nav[x] systems" />
+<meta property="og:image" content="https://navxsys.com/logo_transparent.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Navx Systems" />
 <meta name="twitter:description" content="In stealth." />
+<meta name="twitter:image" content="https://navxsys.com/logo_transparent.png" />
 
-<!-- Favicon (inline so no extra asset needed) -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 fill=%22%230A0B0D%22/><text x=%2216%22 y=%2222%22 font-family=%22monospace%22 font-size=%2220%22 font-weight=%22700%22 fill=%22%23E85A1A%22 text-anchor=%22middle%22>x</text></svg>" />
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="icon.png" />
+<link rel="apple-touch-icon" href="icon.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,23 +105,13 @@
     justify-content: center;
     gap: 32px;
   }
-  .wordmark {
-    margin: 0;
-    font-weight: 700;
-    font-size: clamp(56px, 10vw, 132px);
-    line-height: 1;
-    letter-spacing: -0.05em;
-    color: var(--paper);
-    display: inline-flex;
-    align-items: baseline;
-    gap: 0.04em;
+  .logo {
+    display: block;
+    width: clamp(280px, 55vw, 720px);
+    height: auto;
+    user-select: none;
+    -webkit-user-drag: none;
   }
-  .wordmark .br {
-    font-family: "JetBrains Mono", monospace;
-    font-weight: 600;
-    letter-spacing: 0;
-  }
-  .wordmark .x { color: var(--amber); }
 
   .contact {
     font-family: "JetBrains Mono", monospace;
@@ -240,15 +233,17 @@
   </header>
 
   <main class="center">
-    <h1 class="wordmark">
-      nav<span class="br">[<span class="x">X</span>]</span>&nbsp;systems
-    </h1>
+    <h1 class="sr-only">Navx Systems</h1>
+    <img class="logo" src="logo_transparent.png"
+         alt="Navx Systems"
+         width="1672" height="941"
+         decoding="async" fetchpriority="high" />
     <a class="contact" href="mailto:info@navxsys.com">info@navxsys.com</a>
   </main>
 
   <footer class="bottom meta">
     <div class="left">
-      <span>© nav[x] systems</span>
+      <span>© Navx Systems</span>
     </div>
     <div class="right"></div>
   </footer>
